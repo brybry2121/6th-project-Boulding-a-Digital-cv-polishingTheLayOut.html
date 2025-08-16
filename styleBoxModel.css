@@ -1,0 +1,99 @@
+
+/*Use border-box in all Element*/
+    * {
+        box-sizing: border-box;
+    }
+/*Add margin,padding and border to the body*/
+    body {
+        font-family: "source code pro,monospace";/*use google font for modern monospace look*/
+        font-size: 16px;/*set a base font size*/
+        line-height: 2;/* increase linehight for better readable*/
+        padding: 2rem;
+        background-color: #131313;/*set black as background for the "hacky"apperance*/
+        border: 2px solid #33ff33;
+        color: #33ff33;/*classic green color for the text*/
+        margin: 2rem;
+    }
+    h1
+    {
+       font-size: 2.0rem; /*set a larger font size for main heading*/
+       text-align: center;/*align the main header to the center*/
+       text-shadow: 3x 3x 5x rgba(0, 204, 0, 0.7);/*Add a drope shadow effect for emphasis*/
+       
+    }
+    h2
+    {
+        font-size: 1.6rem;/* a moderate font size for sub-heading*/
+        font-weight: 600;/*make it slightly border for difrentation*/
+        text-transform: uppercase;/*convert text to upercase for visual prominence*/
+
+    }
+   h3
+   {
+    font-size: 1.2rem;/* A size tha's between h2 and p for differentiation*/
+   }
+   /* Aply padding below header to provide spacing and ensure content doesn't feel cramped*/
+   h1, h2, h3
+   {
+    padding-bottom: 1rem;
+   }
+   p, li, table, form
+   {
+    font-size: 0.8rem;
+   }
+   a
+   {
+    text-decoration: none;/* removing defoult underline from links*/
+    color: #66ff66;/* A slightly lighter shade for links for better distinction*/
+   }
+   /*Separate section with margins to utilize collapsing margins. also , use borders to space  them apart.*/
+   main section,
+   footer section
+   {
+    margin: 4rem 0;
+    border-top: 2px solid #33ff33 ;
+   }
+   /* Adjust form element to capture same look and feel.*/
+   form input,
+   form textarea,
+   form select
+   {
+    padding: 0.1rem 0.2rem;
+    color: #33ff33;
+    border:2px dotted  #33ff33;
+    background-color:#131313 ;
+   }
+   form fieldset
+   {
+    border: none;
+   }
+   form button
+   {
+    padding: 0.5rem 1rem;
+    color: #33ff33;
+    border: 2px solid #33ff33;
+    background-color: #131313;
+
+   }
+   
+/* Remove outline from form elements,ensuring a cleaner look.*/
+ form input,
+ form textarea
+ {
+    outline: none;
+ }
+ /* Make the profile picture rounded, and add a border.*/
+ .image-container img
+ {
+    border-radius:50%;
+ }
+ /*===HELPER===*/
+ .border-dotted
+ {
+ border: 2px dotted #33ff33;
+ }
+   
+
+
+   
+    

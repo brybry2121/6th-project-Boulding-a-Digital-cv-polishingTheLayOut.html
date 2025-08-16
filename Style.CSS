@@ -1,0 +1,58 @@
+
+/*Styling for the entire document*/            
+body {
+    font-family: Arial, sans-serif;
+    line-height: 2;
+    background-color: rgb(13, 13, 13);
+    color: #33ff33;
+    font-size: 16px;
+}
+/*Style for main heading*/
+h1
+{
+    font-size: 2.0 rem;
+    text-align: center;
+    text-shadow: 3px 3px 5px rgba(0, 204,0, 0.7);
+}
+/*Style for sub heading*/
+h2
+{
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-transform: uppercase;
+
+}
+/*Styling for sub-sub-heading*/
+h3
+{
+    font-size: 1.2rem;
+}
+/*Styling for Paragraph*/
+p
+{
+    font: size 0.8rem; ;
+}
+/*Styling for hyperlinks*/
+a
+{
+    text-decoration: none;
+    color: #66ff66;
+}
+/*Styling for list item*/
+li
+{
+    font-size: 0.8rem;
+}
+/*Styling for Table*/
+table
+{
+    font-size: 0.8rem;
+}
+/*Styling for Form*/
+form
+{
+    font-size: 0.8rem;
+}
+
+
+  

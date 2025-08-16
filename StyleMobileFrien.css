@@ -1,0 +1,69 @@
+/* General */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Source Code Pro', monospace; /* Modern font */
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: #131313; /* Hacker-style background */
+    color: #33ff33;
+    padding: 2rem;
+    margin: 0 auto;
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.image-container img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    transition: transform 0.5s; /* Adding hover animation */
+}
+
+.image-container img:hover {
+    transform: scale(1.1); /* Enlarge on hover */
+}
+
+/* Headings */
+h1, h2, h3 {
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 2rem;
+    text-shadow: 2px 2px 5px rgba(51, 255, 51, 0.5);
+}
+
+/* Links */
+a {
+    color: #66ff66;
+    text-decoration: none;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 480px) {
+    body {
+        padding: 1rem;
+        font-size: 14px;
+    }
+
+    .image-container img {
+        width: 100px;
+        height: 100px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+}

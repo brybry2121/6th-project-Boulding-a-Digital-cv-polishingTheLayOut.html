@@ -1,0 +1,254 @@
+
+/*general*/
+* {
+    box-sizing: border-box;
+}
+/*Add margin,padding and border to the body*/
+body {
+    font-family: "source code pro,monospace";/*use google font for modern monospace look*/
+    font-size: 16px;/*set a base font size*/
+    line-height: 2;/* increase linehight for better readable*/
+    padding: 2rem;
+    background-color: #6a70a499;/*set black as background for the "hacky"apperance*/
+    border: 2px solid #33ff33;
+    color: #33ff33;/*classic green color for the text*/
+    margin: 2rem;
+}
+/*Media query adjusting the size of the screen mobile,Tablet and computer size below 
+600 and between 600 to 1000 and above 1000*/
+       section#essay{
+        width: 90%;
+        margin: 0 auto;
+       }
+       @media(Min-Width:600px){
+        section#essay{
+            width: 80%;
+        }
+        body
+        {
+               background-color: palevioletred;
+        }
+       }
+       @media(Min-Width:1000px){
+        section#essay{
+            width: 50%;
+        }
+        body
+        {
+            background-color: #131313;
+        }
+       }
+       h1
+       /*transition you can make animation all staf hover the style*/
+       {
+        font-size: 2em;
+         color:green;
+         transition:all 10s;
+       }
+       h1:Hover
+       {
+        font-size: 4em;
+        color: magenta;
+       }
+       h2:hover
+       {
+        transform: translateX(200px);
+        transition: transform 2s cubic-bezier(0.5, 0, 0.75, 0);
+       }
+       
+h1
+{
+   font-size: 2.0rem; /*set a larger font size for main heading*/
+   text-align: center;/*align the main header to the center*/
+   text-shadow: 3x 3x 5x rgba(0, 204, 0, 0.7);/*Add a drope shadow effect for emphasis*/
+   
+}
+h2
+{
+    font-size: 1.6rem;/* a moderate font size for sub-heading*/
+    font-weight: 600;/*make it slightly border for difrentation*/
+    text-transform: uppercase;/*convert text to upercase for visual prominence*/
+
+}
+h3
+{
+font-size: 1.2rem;/* A size tha's between h2 and p for differentiation*/
+}
+/* Aply padding below header to provide spacing and ensure content doesn't feel cramped*/
+h1, h2, h3
+{
+padding-bottom: 1rem;
+}
+p, li, table, form
+{
+font-size: 0.8rem;
+}
+a
+{
+text-decoration: none;/* removing defoult underline from links*/
+color: #66ff66;/* A slightly lighter shade for links for better distinction*/
+}
+header section
+{
+    display: flex;
+    justify-content: space-between;/*separet item from each other in the x-axis*/
+    height: 20rem;
+
+}
+/*Separate section with margins to utilize collapsing margins. also , use borders to space  them apart.*/
+main section,
+footer section
+{
+margin: 4rem 0;/*separetes them using collapsing margins*/
+border-top: 2px solid #33ff33 ;/*strengthen the separetion between them*/
+}
+/* Adjust form element to capture same look and feel.*/
+form input,
+form textarea,
+form select
+{
+padding: 0.1rem 0.2rem;
+color: #33ff33;
+border:2px dotted  #33ff33;
+background-color:#131313 ;
+}
+form fieldset
+{
+border: none;
+margin: 0;
+padding: 0;
+}
+form button
+{
+padding: 0.5rem 1rem;
+color: #33ff33;
+border: 2px solid #33ff33;
+background-color: #131313;
+
+}
+
+/* Remove outline from form elements,ensuring a cleaner look.*/
+form input,
+form textarea
+{
+outline: none;
+}
+/*Header Introduction section */
+header section .image-container
+{
+    align-self: flex-start;/*position itself to the start of y-axis*/
+
+/* Make the img shape square */
+width:15rem;
+height:15rem;
+}
+header section .image-container img
+{
+   display: block; 
+
+   /*fits the img into  the container div.*/
+
+   width:100%;
+   height:100%;
+
+border-radius: 50%;/*rounds the img.*/
+
+object-fit:cover; /*preserves the origional aspect ratio.*/
+object-position:100% 20%;/*makes the face visible moving the img down*/
+}
+
+heade-section .name-container
+{
+    align-self: center;/*position itself to the center of y-axis*/
+}
+header-section .information-container
+{
+    align-self: flex-end;/*position itself to the end of y-axis.*/
+}
+/*MAIN: Technology section*/
+.technologies .container
+{
+    display: flex;
+    justify-content:space-between ;
+}
+/*MAIN:Tools Section*/
+.tools .container
+{
+   display: flex; 
+   justify-content: center;
+}
+/*MAIN Project Section*/
+.project-entry
+{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.project-entry .image-container
+{
+  display: flex;
+  justify-content: center;
+  margin-right: 2rem;
+}
+
+.project-entry .image-container img
+{
+  object-fit: contain;
+}
+
+.projects .message-container
+{
+  margin-top: 2rem;
+  text-align: end;
+}
+
+/* === MAIN - Contact SECTION === */
+.contact .form-container
+{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact .text-input-container,
+.contact .select-container,
+.contact .checkbox-container
+{
+  display: flex;
+  width: 30rem;
+  margin-bottom: 1rem;
+}
+
+.contact .text-input-container label,
+.contact .select-container label
+{
+  flex-grow: 1;
+}
+
+.contact .text-input-container input,
+.contact .text-input-container textarea,
+.contact .select-container select
+{
+  width: 20rem;
+}
+
+.contact .text-input-container textarea
+{
+  height: 10rem;
+}
+
+.contact .button-container
+{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.contact .button-container button[type=reset]
+{
+  margin-right: 1rem;
+}
+
+/* === HELPERS === */
+.border-dotted
+{
+  border: 2px dotted #33ff33;
+}
